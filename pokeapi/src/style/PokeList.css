@@ -1,0 +1,20 @@
+ul{
+    list-style: none;
+   
+    gap:40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+li{
+    width: 220px;
+    height: 250px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 4px 22px 8px rgba(45, 44, 44, 0.72);
+    border-radius: 10px;
+}
