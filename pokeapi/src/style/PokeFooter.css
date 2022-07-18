@@ -1,0 +1,22 @@
+#botonesPoke{
+    width: 500px;
+    height: 200px;
+   margin-left: 500px;
+}
+.botonA{
+ width: 20px;
+ height: 20px;
+ border:2px solid black;
+ position: relative;
+ top: 80px;
+ left: -148px;
+ cursor: pointer;
+}
+.botonS{
+    width: 20px;
+ height: 20px;
+ border:2px solid black;
+ position: relative;
+ top: 80px;
+ left: -70px;
+}
