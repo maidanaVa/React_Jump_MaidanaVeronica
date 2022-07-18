@@ -76,7 +76,7 @@ function App() {
         {/* abre div derecho */}
         <div className="contendorDerecho w-1/5  flex flex-col items-center justify-evenly border-l ">
             <input type='text' className='w-11/12 h-10 bg-neutral-200 rounded-full' placeholder='Search'></input>
-            <div className='bg-white h-5/6 w-11/12 bg-neutral-200 rounded-md flex flex-col text-xs text-slate-700 '>
+            <div className='bg-white h-5/6 w-11/12  rounded-md flex flex-col text-xs text-slate-700 bg-neutral-300 '>
                 <p className='text-xl text-black mb-3 ml-3'><b>Trends for you</b></p>
                 <Tendencia tt="Tailwind" numerott="12" personastt="13.945" />
                 <Tendencia tt="Arbusta" numerott="20" personastt="23.743" />
