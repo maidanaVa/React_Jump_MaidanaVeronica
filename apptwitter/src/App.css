@@ -13,3 +13,40 @@
 display: flex;
 flex-direction: row;
 }
+/* .placeLupa::placeholder {
+    padding-left: 40px; 
+  } */
+.placeLupa{
+    padding-left:15px;
+  }
+.placeLupa::placeholder{
+    text-indent: 1.5em;
+   background-image: url(../src/assets/5402443_search_find_magnifier_magnifying_magnifying\ glass_icon.png);
+   background-repeat: no-repeat;
+   background-position: 3px;
+   
+}
+input{
+    outline: none;
+}
+.navMobile{
+    display: none;
+}
+@media (max-width:634px){
+    .contenedorDerecho{
+        display:none;
+    }
+    .escribiendoTweet{
+        display: none;
+    }
+    .logoPajarito,.menuMobile,.destellos{
+        color: #0da9be;
+    }
+    .destellos{
+        rotate: 180deg;
+        
+    }
+    .navDesk{
+        display: none;
+    }
+}

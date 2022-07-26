@@ -1,6 +1,5 @@
 /* componente de clase 2 */
 import React from "react";/* importar react en componente de clase */
-import ImgUsuario from '../assets/imgusu.jpg';
 import retweet from '../assets/retweet.png';
 import comentario from '../assets/comentario.png';
 import like from '../assets/amor.png';
@@ -9,19 +8,21 @@ import compartir from '../assets/compartido.png';
 
 class Tweet extends React.Component{
     render(){
-        return <div className="cajaTweet flex felx-row gap-5 ">
-                    <img className="w-20 h-20 rounded-full"  src={ImgUsuario} alt="" />
-                    <div className="cajaText flex- flex-col w-4/5 ">
-                       <span><b>Pierina Martinez</b></span>
-                       <span>@pierinam</span>
-                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos beatae, rerum deserunt nobis doloribus? Id consequuntur tempora provident accusamus vitae ratione deleniti, quas excepturi numquam similique harum reprehenderit fugit!</p>
+        return <div className="cajaTweet flex flex-row gap-5 ml-6 mt-3" >
+                    <img className="w-20 h-20 rounded-full"  src={this.props.imagenAvatar} alt="" />
+                    <div className="cajaText w-4/5 ">
+                       <span><b>{this.props.userName}</b></span>
+                       <span>@{this.props.userArroba}</span>
+                       <div  className="bg-gray-100 h-24 rounded-md text-sm">
+                       <p className="ml-2 pt-2">{this.props.tweetText}</p>
+                       </div>
                        <div className="interacciones flex flex-row my-3 justify-evenly">
                            <img className="w-5 h-5" src={comentario} alt=""/>
                            <img className="w-6 h-6"  src={retweet} alt=""/>
                            <img className="w-5 h-5" src={like} alt=""/>
                            <img className="w-7 h-7"  src={compartir} alt=""/>
                        </div>
-                      
+                       
                     </div>
                </div>
     }

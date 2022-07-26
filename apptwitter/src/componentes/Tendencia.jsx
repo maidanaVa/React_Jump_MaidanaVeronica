@@ -2,6 +2,8 @@
 import React from "react";
 
 class Tendencia extends React.Component{
+    
+    
     render(){
         return <div className="flex flex-col ml-3">
          Trending worlwide   
