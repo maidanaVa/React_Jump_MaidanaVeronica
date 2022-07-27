@@ -23,37 +23,28 @@ import imagenAvatar1 from './assets/avatar1.jpg';
 import imagenAvatar3 from './assets/avatar3.jpg';
 import imagenAvatar4 from './assets/avatar4.jpg';
 import imgTweet1 from './assets/react.jpg';
-import { useEffect,useState } from 'react';
-function App() {
-const [ancho,setAncho]= useState(window.innerWidth);
+import BurbujaFixed from './componentes/BurbujaFixed';
+import FooterSticky from './componentes/FooterSticky';
 
-const cambiarTamaño=()=>{
-    setAncho(window.innerWidth);
-}
-    useEffect(()=>{
-        window.addEventListener('resize',cambiarTamaño);
-     
-     },[]);
- 
+
+function App() {
   return (
     <div className="App ">{/* componente padre es App  */}
 
-
-
        {/*  abre div izquierdo */}
-        <div className="contendorIzquierdo border-r w-1/5 flex flex-col items-center">
+        <div className="contenedorIzquierdo border-r w-1/5 flex flex-col items-center">
 
             <img className='w-8 h-8 my-7 mr-40' src={iconoTw} alt=''/>
 
             <div className='flex flex-col  w-3/6 gap-5'>
 
-              <Seccion textoItems={ancho>770 ? true:false} imagenMenu={home} textoMenu="Home"/>
-              <Seccion textoItems={ancho>770 ? true:false} imagenMenu={hastag} textoMenu="Explorar" />
-              <Seccion textoItems={ancho>770 ? true:false} imagenMenu={campana} textoMenu="Notificaciones"/>
-              <Seccion textoItems={ancho>770 ? true:false} imagenMenu={guardado} textoMenu="Guardados"/>
-              <Seccion textoItems={ancho>770? true:false} imagenMenu={md} textoMenu="Mensajes"/>
-              <Seccion textoItems={ancho>770 ? true:false} imagenMenu={listita} textoMenu="Listas"/>
-              <Seccion textoItems={ancho>770 ? true:false} imagenMenu={avatar} textoMenu="Perfil" />
+              <Seccion  imagenMenu={home} textoMenu="Home"/>
+              <Seccion  imagenMenu={hastag} textoMenu="Explorar" />
+              <Seccion  imagenMenu={campana} textoMenu="Notificaciones"/>
+              <Seccion  imagenMenu={guardado} textoMenu="Guardados"/>
+              <Seccion  imagenMenu={md} textoMenu="Mensajes"/>
+              <Seccion  imagenMenu={listita} textoMenu="Listas"/>
+              <Seccion  imagenMenu={avatar} textoMenu="Perfil" />
 
             </div>
 
@@ -63,11 +54,12 @@ const cambiarTamaño=()=>{
        {/* cierra div izquierdo */}
 
        {/*  abre div central */}
-        <div className="contendorCentral w-3/5  flex flex-col">
-            <div className='navDesk flex flex-row justify-between'>
-                <b className='ml-3 mt-2'>Home</b> 
-                <img className='h-6 w-6  mt-3 mr-3' src={brillos} alt=''/>
+            <div className="contenedorCentral w-3/5  flex flex-col">
+                <div className='navDesk flex flex-row justify-between'>
+                    <b className='ml-3 mt-2'>Home</b> 
+                    <img className='h-6 w-6  mt-3 mr-3' src={brillos} alt=''/>
             </div>
+
             <div className='navMobile'>
             <span className="iconify menuMobile" data-icon="eva:menu-fill" ></span>
             <span className="iconify logoPajarito" data-icon="akar-icons:twitter-fill" />
@@ -88,20 +80,28 @@ const cambiarTamaño=()=>{
                   </div>
                 
               </div>
+
               <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full  h-10 w-24 self-end mr-6 mb-2">Tweet</button>
            </div>
 
+            
             <Tweet imagenAvatar={imagenAvatar1} userName="pierina" userArroba="pierinamar" tweetText="Hoy me estoy haciendo uñas con Lujan."/>
             <TweetImg imgTweet={imgTweet1} imagenAvatar={imagenAvatar4} userName="agustina" userArroba="aguspaal" tweetText="Hola estoy aprendiendo React, Tailwind y Figma."/>
             <Tweet imagenAvatar={imagenAvatar3} userName="lujan" userArroba="lujanmai" tweetText="Estamos tomando mates con Agus y Aye."/>
-          
-        
+            <Tweet imagenAvatar={imagenAvatar1} userName="pierina" userArroba="pierinamar" tweetText="Hoy me estoy haciendo uñas con Lujan."/>
+            <TweetImg imgTweet={imgTweet1} imagenAvatar={imagenAvatar4} userName="agustina" userArroba="aguspaal" tweetText="Hola estoy aprendiendo React, Tailwind y Figma."/>
+            <Tweet imagenAvatar={imagenAvatar1} userName="pierina" userArroba="pierinamar" tweetText="Hoy me estoy haciendo uñas con Lujan."/>
+            <TweetImg imgTweet={imgTweet1} imagenAvatar={imagenAvatar4} userName="agustina" userArroba="aguspaal" tweetText="Hola estoy aprendiendo React, Tailwind y Figma."/>
+            
+            <BurbujaFixed/>
+            <FooterSticky/>
         </div>
         {/* cierra div central */}
 
         {/* abre div derecho */}
         <div className="contenedorDerecho w-1/5  flex flex-col items-center justify-evenly border-l ">
             <input type='text' className='placeLupa w-11/12 h-10 bg-stone-200 rounded-full ' placeholder="Search"></input>
+            
             <div className='bg-white h-5/6 w-11/12  rounded-md flex flex-col text-xs text-slate-700 bg-neutral-200 gap-3'>
 
                 <p className='text-xl text-black mb-3 ml-3'><b>Trends for you</b></p>
@@ -113,11 +113,11 @@ const cambiarTamaño=()=>{
                 <Noticia imgNoticia={ImgNoticia}/>
                 <Tendencia tt="React" numerott="9" personastt="9.734" />
                 
-           
+              
             </div>
         </div>
         {/*cierra div derecho */}
-        
+      
     </div>
   );
 }
