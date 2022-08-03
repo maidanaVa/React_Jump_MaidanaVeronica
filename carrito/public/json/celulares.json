@@ -1,0 +1,73 @@
+[
+    {
+        "id":"1",
+        "name":"Samsung A51",
+        "stock":"5",
+        "img":"celular1.png",
+        "precio":"55.000"
+
+    },
+    {
+        "id":"2",
+        "name":"Samsung A30",
+        "stock":"2",
+        "img":"celular2.png",
+        "precio":"45.000"
+
+    },
+    {
+        "id":"3",
+        "name":"Samsung S71",
+        "stock":"8",
+        "img":"celular3.png",
+        "precio":"78.000"
+
+    },
+    {
+        "id":"4",
+        "name":"Samsung ZFlip ",
+        "stock":"3",
+        "img":"celular4.png",
+        "precio":"150.000"
+
+    },{
+        "id":"5",
+        "name":"Samsung S40",
+        "stock":"5",
+        "img":"celular5.png",
+        "precio":"99.000"
+
+    },
+    {
+        "id":"6",
+        "name":"Samsung A10",
+        "stock":"2",
+        "img":"celular6.png",
+        "precio":"25.000"
+
+    },
+    {
+        "id":"7",
+        "name":"Samsung M10",
+        "stock":"8",
+        "img":"celular7.png",
+        "precio":"39.000"
+
+    },
+    {
+        "id":"8",
+        "name":"Samsung Note 10+ ",
+        "stock":"3",
+        "img":"celular8.png",
+        "precio":"145.000"
+
+    }
+
+
+
+
+
+
+
+
+]
