@@ -6,7 +6,7 @@ function Tarjeta(){
 
    const[producto,setProducto]=useState([]) /* guarda el estado en el que esta mi elemento(producto) */
          
-   useEffect(()=>{ /* trae lo guardado en el estado  */
+   useEffect(()=>{                                  /* trae lo guardado en el estado  */
       obtenerDatos()
    },[])
  
