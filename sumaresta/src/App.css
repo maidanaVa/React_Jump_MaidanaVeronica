@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(78, 235, 133);
+    color: aliceblue;
+   font-weight: bold;
+   font-size: 30px;
+}
+.App{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 250px;
+    
+}
+.cajaBotones{
+ width: 60%;
+ height: 80px ;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 20px;
+}

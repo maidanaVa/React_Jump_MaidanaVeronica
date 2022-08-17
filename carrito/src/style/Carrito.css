@@ -1,0 +1,66 @@
+.Carrito{
+    display: flex;
+    flex-direction: column;
+    width:  100%;
+    height: 100%;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+/* .cajaIzq{
+ width: 50%;
+ height: 640px;
+ background-color: rgb(231, 230, 230);
+ border-radius: 30px;
+ box-shadow: 0px 3px 42px 5px rgba(89,89,89,1);
+} */
+.carritoArriba{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cajaDerecha{
+width: 28%;
+height: 640px;
+background-color: rgb(0, 0, 0);
+border-radius: 30px;
+box-shadow: 0px 16px 31px 7px rgba(54,53,54,1);
+display: flex;
+flex-direction: column;
+
+gap: 30px;
+
+color: white;
+
+
+}
+.cajaImgCarrito{
+    width: 95%;
+    height: 250px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+.carritoProductoAgregado{
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btnsCantidadCarrito{
+    width: 20%;
+    height: 100px;
+}
+.btnsConfirmacion{
+    display: flex;
+    justify-content: space-evenly;
+}
+button{
+    width: 80px;
+}
+.imagenCarrito{
+width:60%;
+height: 80%;
+}

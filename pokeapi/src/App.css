@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background-color: #BD0F34;
+    font-family: fantasy;
+  
+   
+}
+h1{
+    color: yellow;
+    text-align: center;
+    font-size: 60px;
+    margin-right: 73px;
+    align-self: flex-end;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.cajaImgDeco{
+    background-color: aqua;
+}
+main{
+    width:90%;
+    height: 1300px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(194, 186, 180);
+    margin-left: 80px;
+    border: 2px solid black;
+}
+#deco1{
+    width: 300px;
+    height: auto;
+}
+#botonesPoke{
+    width: 500px;
+    height: 200px;
+   margin-left: 500px;
+}

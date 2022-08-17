@@ -1,0 +1,82 @@
+.tarjeta{
+   width: 295px;
+   height: 380px;
+   background-color: rgb(0, 0, 0);
+   display: flex;
+   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 16px 31px 7px rgba(54,53,54,1);
+  gap: 11px;
+  text-align: center;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+.imgTarjeta{
+    width: 235px;
+    height: 200px;
+    
+}
+.cajaTextProducto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.btn {
+    width: 6.5em;
+    height: 2.3em;
+    background: rgb(47, 46, 46);
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
+   
+   .btn:hover {
+    color: black;
+   }
+   
+   .btn:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   .btn:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
+   #carrito{
+    width: 3em;
+   }
+   .btnTarjeta{
+    display: flex;
+    gap: 4px;
+   }
+ a:link, a:visited, a:active {
+    text-decoration:none;
+    
+}
+a,a:after{
+    color: #fff;
+}
+a:hover {
+    color: black;
+}
