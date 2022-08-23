@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(234, 213, 185);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+h4{
+  width:160px;
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+  width: 98%;
+  padding-left: 0;
+  display: flex;
+ flex-direction: column;
+gap: 10px;
+ 
+}
+li{
+  display: flex;
+  justify-content: space-evenly;
+}
+.card {
+  width: 100%px;
+  height: 100px;
+  background: rgb(255, 255, 255);
+  border-radius: 0.4em;
+  box-shadow: 0.3em 0.3em 0.7em #00000015;
+  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: rgb(250, 250, 250) 0.2em solid;
+  display: flex;
+  flex-direction: row;
+ }
+ 
+ .card:hover {
+  border: #006fff 0.2em solid;
+ }
+ p{
+  width: 330px;
+  font-size: 11px;
+}
+img{
+  width: 50px;
+  height: 50px;
+  align-self: center;
+}
+.agregarBtn{
+  width:150px;
+  height: 60px;
+}
+.btnEdicion{
+  display: flex;
+  flex-direction: column;
+}
+.btnStock{
+width: 20px;
+height: 20px;
+}
